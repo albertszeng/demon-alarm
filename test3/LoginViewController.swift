@@ -1,9 +1,9 @@
 //
 //  LoginViewController.swift
-//  test3
+//  demon-alarm
 //
 //  Created by Albert Zeng on 12/8/16.
-//  Copyright © 2016 viv. All rights reserved.
+//  Copyright © 2016 Albert. All rights reserved.
 //  
 // 
 //  Thanks to twitter for having a bomb API. The code for the twitter button is based on the code they provided

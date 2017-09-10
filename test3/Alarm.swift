@@ -1,9 +1,9 @@
 //
 //  Alarm.swift
-//  test3
+//  demon-alarm
 //
-//  Created by Vivian Zhou on 11/30/16.
-//  Copyright © 2016 viv. All rights reserved.
+//  Created by Albert Zeng on 11/30/16.
+//  Copyright © 2016 Albert. All rights reserved.
 //
 
 import UIKit

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  test3
+//  demon-alarm
 //
-//  Created by Vivian Zhou on 11/29/16.
-//  Copyright © 2016 viv. All rights reserved.
+//  Created by Albert Zeng on 11/30/16.
+//  Copyright © 2016 Albert. All rights reserved.
 //
 
 import UIKit
@@ -104,16 +104,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     dateFormatter.dateFormat = "mm"
                     let alarmminute = dateFormatter.string(from: alarmdate!)
                     
-                    
                     var afternoon: Int?
                     
                     // convert hour based on AM or PM
                     if alarmAmpm == "PM" {
                         if alarmhour == "12" {
-                            afternoon = Int(alarmhour)! - 12
+                            print("alarmhour is 12")
                         }
-                        afternoon = Int(alarmhour)! + 12
-                        alarmhour = String(describing: afternoon)
+                        else {
+                            afternoon = Int(alarmhour)! + 12
+                            alarmhour = String(describing: afternoon)
+                        }
                     }
                     else if alarmAmpm == "AM" {
                         if alarmhour == "12" {
@@ -131,6 +132,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     alarmhour = alarmhour.replacingOccurrences(of: ")", with: "", options: NSString.CompareOptions.literal, range:nil)
                     
                     // check if current time is same as the alarm time. If so, trigger alarm popup
+                
                     if Int(alarmhour) == hour && Int(alarmminute) == minutes {
                         // play sound of the alarm
                         playSound()
@@ -145,6 +147,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // function for allowing the twitter popup, which allows users to either post and snooze, or cancel the alarm
     func ShowTwitterPopup(viewController: UIViewController, alarm: Alarm) {
+        
+        print("starting ShowTwitterPopup")
         
         // generate a random number to be appended onto the tweet, as twitter doesn't allow the same tweet to be posted mutliple times
         let counter = Int(arc4random())

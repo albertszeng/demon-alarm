@@ -1,9 +1,9 @@
 //
 //  AlarmViewController.swift
-//  test3
+//  demon-alarm
 //
-//  Created by Vivian Zhou on 11/29/16.
-//  Copyright © 2016 viv. All rights reserved.
+//  Created by Albert Zeng on 11/30/16.
+//  Copyright © 2016 Albert. All rights reserved.
 //
 
 import UIKit
@@ -114,20 +114,23 @@ class AlarmViewController: UIViewController, UINavigationControllerDelegate {
         content.body = "ALARM ALARM ALARM"
         content.sound = UNNotificationSound.init(named: "alarmsound.mp3")
         
+        let date = Calendar.current.dateComponents([.hour, .minute], from: alarmTime.date)
         
-        // convert time to a Date
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "h:mm a"
-        let time = dateFormatter.date(from: alarm.time)
+//        // convert time to a Date
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "h:mm a"
+//        let time = dateFormatter.date(from: alarm.time)
+//        
+//        // get hour and minute components and set as a DateComponent()
+//        let calendar = Calendar.current
+//        let hour = calendar.component(.hour, from: time!)
+//        let minute = calendar.component(.minute, from: time!)
+//        
+//        var date = DateComponents()
+//        date.hour = hour
+//        date.minute = minute
         
-        // get hour and minute components and set as a DateComponent()
-        let calendar = Calendar.current
-        let hour = calendar.component(.hour, from: time!)
-        let minute = calendar.component(.minute, from: time!)
-        
-        var date = DateComponents()
-        date.hour = hour
-        date.minute = minute
+        print("date.hour is: \(date.hour)")
         
         // set trigger and request identifier for notification request
         let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)

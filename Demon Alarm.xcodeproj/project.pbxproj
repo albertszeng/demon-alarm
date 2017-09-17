@@ -22,6 +22,8 @@
 		FBBE059E1DF93855002400D6 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FBBE059A1DF93855002400D6 /* TwitterKitResources.bundle */; };
 		FBBE059F1DF93855002400D6 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBE059B1DF93855002400D6 /* TwitterCore.framework */; };
 		FBBE05A11DF938B2002400D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBE05A01DF938B2002400D6 /* LoginViewController.swift */; };
+		FBE3AFF31F6F411900BA5011 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBE3AFF51F6F411900BA5011 /* Localizable.strings */; };
+		FBE3AFFA1F6F411A00BA5011 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBE3AFFC1F6F411A00BA5011 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +44,18 @@
 		FBBE059A1DF93855002400D6 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		FBBE059B1DF93855002400D6 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		FBBE05A01DF938B2002400D6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FBCF264D1F6F0765009D9423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		FBE3AFF41F6F411900BA5011 /* es */ = {isa = PBXFileReference; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FBE3AFF61F6F411900BA5011 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FBE3AFF71F6F411900BA5011 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		FBE3AFFB1F6F411A00BA5011 /* es */ = {isa = PBXFileReference; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBE3AFFD1F6F413000BA5011 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FBE3AFFE1F6F413100BA5011 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FBE3AFFF1F6F413100BA5011 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		FBE3B0001F6F413100BA5011 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBE3B0011F6F421800BA5011 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FBE3B0021F6F421800BA5011 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FBE3B0031F6F421800BA5011 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		FBE3B0041F6F421900BA5011 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +95,8 @@
 		ACD502771DEE9445002C9FA0 /* test3 */ = {
 			isa = PBXGroup;
 			children = (
+				FBE3AFFC1F6F411A00BA5011 /* InfoPlist.strings */,
+				FBE3AFF51F6F411900BA5011 /* Localizable.strings */,
 				FB0334091DFA014800CDBEE7 /* alarmsound.mp3 */,
 				ACD502781DEE9445002C9FA0 /* AppDelegate.swift */,
 				ACD5027A1DEE9445002C9FA0 /* AlarmViewController.swift */,
@@ -127,7 +142,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = viv;
+				ORGANIZATIONNAME = albert;
 				TargetAttributes = {
 					ACD502741DEE9445002C9FA0 = {
 						CreatedOnToolsVersion = 8.1;
@@ -160,8 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBBE059E1DF93855002400D6 /* TwitterKitResources.bundle in Resources */,
+				FBE3AFFA1F6F411A00BA5011 /* InfoPlist.strings in Resources */,
 				ACD502831DEE9445002C9FA0 /* LaunchScreen.storyboard in Resources */,
 				ACD502911DEFA65C002C9FA0 /* AlarmTableViewController.xib in Resources */,
+				FBE3AFF31F6F411900BA5011 /* Localizable.strings in Resources */,
 				FB03340A1DFA014800CDBEE7 /* alarmsound.mp3 in Resources */,
 				ACD502801DEE9445002C9FA0 /* Assets.xcassets in Resources */,
 				ACD5027E1DEE9445002C9FA0 /* Main.storyboard in Resources */,
@@ -208,7 +225,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				ACD5027D1DEE9445002C9FA0 /* Base */,
-				FBCF264D1F6F0765009D9423 /* en */,
+				FBE3AFF71F6F411900BA5011 /* es */,
+				FBE3AFFF1F6F413100BA5011 /* fr */,
+				FBE3B0031F6F421800BA5011 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -217,8 +236,31 @@
 			isa = PBXVariantGroup;
 			children = (
 				ACD502821DEE9445002C9FA0 /* Base */,
+				FBE3AFF61F6F411900BA5011 /* es */,
+				FBE3AFFE1F6F413100BA5011 /* fr */,
+				FBE3B0021F6F421800BA5011 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FBE3AFF51F6F411900BA5011 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE3AFF41F6F411900BA5011 /* es */,
+				FBE3AFFD1F6F413000BA5011 /* fr */,
+				FBE3B0011F6F421800BA5011 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FBE3AFFC1F6F411A00BA5011 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE3AFFB1F6F411A00BA5011 /* es */,
+				FBE3B0001F6F413100BA5011 /* fr */,
+				FBE3B0041F6F421900BA5011 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ACD502751DEE9445002C9FA0 /* test3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD502751DEE9445002C9FA0 /* Demon Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demon Alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD502781DEE9445002C9FA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD5027A1DEE9445002C9FA0 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		ACD5027D1DEE9445002C9FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +42,7 @@
 		FBBE059A1DF93855002400D6 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		FBBE059B1DF93855002400D6 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		FBBE05A01DF938B2002400D6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FBCF264D1F6F0765009D9423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +74,7 @@
 		ACD502761DEE9445002C9FA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACD502751DEE9445002C9FA0 /* test3.app */,
+				ACD502751DEE9445002C9FA0 /* Demon Alarm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACD502741DEE9445002C9FA0 /* test3 */ = {
+		ACD502741DEE9445002C9FA0 /* Demon Alarm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACD502871DEE9445002C9FA0 /* Build configuration list for PBXNativeTarget "test3" */;
+			buildConfigurationList = ACD502871DEE9445002C9FA0 /* Build configuration list for PBXNativeTarget "Demon Alarm" */;
 			buildPhases = (
 				ACD502711DEE9445002C9FA0 /* Sources */,
 				ACD502721DEE9445002C9FA0 /* Frameworks */,
@@ -113,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = test3;
+			name = "Demon Alarm";
 			productName = test3;
-			productReference = ACD502751DEE9445002C9FA0 /* test3.app */;
+			productReference = ACD502751DEE9445002C9FA0 /* Demon Alarm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,11 +131,12 @@
 				TargetAttributes = {
 					ACD502741DEE9445002C9FA0 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NM33YQKC7L;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = ACD502701DEE9445002C9FA0 /* Build configuration list for PBXProject "test3" */;
+			buildConfigurationList = ACD502701DEE9445002C9FA0 /* Build configuration list for PBXProject "Demon Alarm" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -147,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACD502741DEE9445002C9FA0 /* test3 */,
+				ACD502741DEE9445002C9FA0 /* Demon Alarm */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +208,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				ACD5027D1DEE9445002C9FA0 /* Base */,
+				FBCF264D1F6F0765009D9423 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -318,7 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NM33YQKC7L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -336,7 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NM33YQKC7L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -353,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACD502701DEE9445002C9FA0 /* Build configuration list for PBXProject "test3" */ = {
+		ACD502701DEE9445002C9FA0 /* Build configuration list for PBXProject "Demon Alarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACD502851DEE9445002C9FA0 /* Debug */,
@@ -362,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACD502871DEE9445002C9FA0 /* Build configuration list for PBXNativeTarget "test3" */ = {
+		ACD502871DEE9445002C9FA0 /* Build configuration list for PBXNativeTarget "Demon Alarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACD502881DEE9445002C9FA0 /* Debug */,

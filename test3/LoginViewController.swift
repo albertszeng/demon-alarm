@@ -26,11 +26,11 @@ class LoginViewController: UIViewController {
             
             // if user is already logged in, enable the button to proceed to alarms table page
             if let unwrappedSession = session {
-                let alert = UIAlertController(title: "Logged In",
-                    message: "User \(unwrappedSession.userName) has logged in",
+                let alert = UIAlertController(title: NSLocalizedString("Logged In", comment: "nil"),
+                message: NSLocalizedString("User", comment: "nil") + (unwrappedSession.userName) + NSLocalizedString("has logged in", comment: "nil"),
                     preferredStyle: UIAlertControllerStyle.alert
                 )
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "nil"), style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 
                 self.NextView.isEnabled = true

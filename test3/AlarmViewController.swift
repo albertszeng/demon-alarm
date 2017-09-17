@@ -108,10 +108,11 @@ class AlarmViewController: UIViewController, UINavigationControllerDelegate {
     func scheduleNotification(alarm: Alarm, identifier: Int) {
         
         // set content in the notification
+        
         let content = UNMutableNotificationContent()
-        content.title = "Alarm"
-        content.subtitle = "Wake up! Open the app to turn off the sounds."
-        content.body = "ALARM ALARM ALARM"
+        content.title = NSLocalizedString("Alarm", comment: "nil")
+        content.subtitle = NSLocalizedString("Wake up! Open the app to turn off the sounds.", comment: "nil")
+        content.body = NSLocalizedString("ALARM ALARM ALARM", comment: "nil")
         content.sound = UNNotificationSound.init(named: "alarmsound.mp3")
         
         let date = Calendar.current.dateComponents([.hour, .minute], from: alarmTime.date)

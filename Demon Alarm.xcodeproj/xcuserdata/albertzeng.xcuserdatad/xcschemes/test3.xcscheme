@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ACD502741DEE9445002C9FA0"
-               BuildableName = "test3.app"
-               BlueprintName = "test3"
-               ReferencedContainer = "container:test3.xcodeproj">
+               BuildableName = "Demon Alarm.app"
+               BlueprintName = "Demon Alarm"
+               ReferencedContainer = "container:Demon Alarm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ACD502741DEE9445002C9FA0"
-            BuildableName = "test3.app"
-            BlueprintName = "test3"
-            ReferencedContainer = "container:test3.xcodeproj">
+            BuildableName = "Demon Alarm.app"
+            BlueprintName = "Demon Alarm"
+            ReferencedContainer = "container:Demon Alarm.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ACD502741DEE9445002C9FA0"
-            BuildableName = "test3.app"
-            BlueprintName = "test3"
-            ReferencedContainer = "container:test3.xcodeproj">
+            BuildableName = "Demon Alarm.app"
+            BlueprintName = "Demon Alarm"
+            ReferencedContainer = "container:Demon Alarm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ACD502741DEE9445002C9FA0"
-            BuildableName = "test3.app"
-            BlueprintName = "test3"
-            ReferencedContainer = "container:test3.xcodeproj">
+            BuildableName = "Demon Alarm.app"
+            BlueprintName = "Demon Alarm"
+            ReferencedContainer = "container:Demon Alarm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

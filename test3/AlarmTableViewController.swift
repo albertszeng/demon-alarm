@@ -162,8 +162,13 @@ class AlarmTableViewController: UITableViewController {
                 
                 // if counter is still too big, alert user to delete alarms and do not segue
                 if counter > 1000000 {
-                    let alertController = UIAlertController(title: "Too Many Alarms", message: "Please delete some alarms. You have too many.", preferredStyle: .alert)
-                    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    
+                    let title = NSLocalizedString("Too Many Alarms", comment: "nil")
+                    let message = NSLocalizedString("Please delete some alarms. You have too many.", comment: "nil")
+                    let ok = NSLocalizedString("OK", comment: "nil")
+                    
+                    let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: ok, style: .default, handler: nil)
                     alertController.addAction(defaultAction)
                     present(alertController, animated: true, completion: nil)
                 }
@@ -219,9 +224,9 @@ class AlarmTableViewController: UITableViewController {
         
         // set content in the notification
         let content = UNMutableNotificationContent()
-        content.title = "Alarm"
+        content.title = NSLocalizedString("Alarm", comment: "nil")
         content.subtitle = ""
-        content.body = "Open Alarm App and click 'Post' to Snooze. Click 'Cancel' to dismiss alarm."
+        content.body = NSLocalizedString("Open Alarm App and click 'Post' to Snooze. Click 'Cancel' to dismiss alarm.", comment: "nil")
         content.sound = UNNotificationSound.init(named: "alarmsound.mp3")
         
         

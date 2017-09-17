@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // function that is called when the app is openned for the first time or whenever the app is openned after terminating
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        //Requesting Authorization for notifications
+        // Requesting Authorization for notifications
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
             if granted {
@@ -49,6 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+        
         // reference the AlarmTableViewController so that information from that view controller can be accessed
         let currentNavigationController = self.window?.rootViewController as! UINavigationController
         let currentViewController = currentNavigationController.viewControllers[0] as! AlarmTableViewController
@@ -70,6 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // function for checking if any notifications went off less than a minute ago
     func checkNotifications(array: Array<Alarm>) {
+        
         let array = array
         
         // if any alarms exist, do the following if block
@@ -156,7 +158,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // compose tweet with set text and set image
         let composer = TWTRComposer()
     
-        composer.setText("On a scale from 1 to \(counter), my laziness is a \(counter)")
+        // make tweet a localized string to be translated
+        let tweet1 = NSLocalizedString("On a scale from 1 to ", comment: "nil")
+        let tweet2 = String(counter)
+        let tweet3 = NSLocalizedString(" my laziness is a ", comment: "nil")
+        let tweet4 = String(counter)
+        
+        composer.setText(tweet1 + tweet2 + tweet3 + tweet4)
         composer.setImage(UIImage(named: "fabric"))
     
         // Called from a UIViewController
@@ -186,9 +194,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // set content in the notification
         let content = UNMutableNotificationContent()
-        content.title = "Alarm"
-        content.subtitle = "Wake up! Open the app to turn off the sounds."
-        content.body = "ALARM ALARM ALARM"
+        content.title = NSLocalizedString("Alarm", comment: "nil")
+        content.subtitle = NSLocalizedString("Wake up! Open the app to turn off the sounds.", comment: "nil")
+        content.body = NSLocalizedString("ALARM ALARM ALARM", comment: "nil")
         content.sound = UNNotificationSound.init(named: "alarmsound.mp3")
         
         

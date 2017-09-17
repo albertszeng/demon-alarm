@@ -1,0 +1,21 @@
+/* Class = "UILabel"; text = "Time"; ObjectID = "5zw-yd-Swi"; */
+"5zw-yd-Swi.text" = "时间";
+
+/* Class = "UILabel"; text = "Please log into your Twitter account to continue."; ObjectID = "8yK-gq-wzh"; */
+"8yK-gq-wzh.text" = " 请登录您的Twitter帐户再继续。";
+
+/* Class = "UILabel"; text = "You Share"; ObjectID = "HdK-8c-Y4S"; */
+"HdK-8c-Y4S.text" = "你分享";
+
+/* Class = "UINavigationItem"; title = "Set Alarm"; ObjectID = "YVc-Ev-LhI"; */
+"YVc-Ev-LhI.title" = "设置闹钟";
+
+/* Class = "UINavigationItem"; title = "Alarms"; ObjectID = "Ycb-Ui-nqQ"; */
+"Ycb-Ui-nqQ.title" = "闹钟";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "oFn-Rg-44c"; */
+"oFn-Rg-44c.normalTitle" = "继续";
+
+/* Class = "UILabel"; text = "You Snooze"; ObjectID = "rph-98-m4s"; */
+"rph-98-m4s.text" = "暂停";
+

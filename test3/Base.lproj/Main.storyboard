@@ -13,7 +13,7 @@
         <!--Set Alarm-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AlarmViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AlarmViewController" customModule="Demon_Alarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -67,13 +67,13 @@
         <!--Alarms-->
         <scene sceneID="Qyn-fe-dLR">
             <objects>
-                <tableViewController storyboardIdentifier="AlarmTableViewController" id="lJv-mB-o1z" customClass="AlarmTableViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AlarmTableViewController" id="lJv-mB-o1z" customClass="AlarmTableViewController" customModule="Demon_Alarm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="PAt-j3-cSq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AlarmTableViewCell" rowHeight="90" id="Qjm-nk-0ih" customClass="AlarmTableViewCell" customModule="test3" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AlarmTableViewCell" rowHeight="90" id="Qjm-nk-0ih" customClass="AlarmTableViewCell" customModule="Demon_Alarm" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qjm-nk-0ih" id="vbP-Pz-UNr">
@@ -145,7 +145,7 @@
         <!--Login View Controller-->
         <scene sceneID="hhD-MC-moE">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="c3U-EZ-2Qh" customClass="LoginViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="c3U-EZ-2Qh" customClass="LoginViewController" customModule="Demon_Alarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YWb-nl-gck"/>
                         <viewControllerLayoutGuide type="bottom" id="P97-3u-qOM"/>
@@ -191,7 +191,9 @@
                             <constraint firstItem="NLX-bU-xqT" firstAttribute="top" secondItem="YWb-nl-gck" secondAttribute="bottom" constant="42" id="Aol-Oc-YKX"/>
                             <constraint firstItem="8yK-gq-wzh" firstAttribute="top" secondItem="HdK-8c-Y4S" secondAttribute="bottom" constant="37" id="MWc-Ag-qgz"/>
                             <constraint firstItem="NLX-bU-xqT" firstAttribute="centerX" secondItem="5Q6-WI-oQ2" secondAttribute="centerX" id="VQo-fE-rh7"/>
+                            <constraint firstItem="8yK-gq-wzh" firstAttribute="leading" secondItem="5Q6-WI-oQ2" secondAttribute="leading" constant="3" id="Wya-zi-qlH"/>
                             <constraint firstItem="oFn-Rg-44c" firstAttribute="centerX" secondItem="5Q6-WI-oQ2" secondAttribute="centerX" id="Xtt-2M-cKr"/>
+                            <constraint firstAttribute="trailing" secondItem="8yK-gq-wzh" secondAttribute="trailing" constant="4" id="emS-GP-qch"/>
                             <constraint firstItem="P97-3u-qOM" firstAttribute="top" secondItem="oFn-Rg-44c" secondAttribute="bottom" constant="50" id="qpd-o5-GzZ"/>
                             <constraint firstItem="8yK-gq-wzh" firstAttribute="centerX" secondItem="5Q6-WI-oQ2" secondAttribute="centerX" id="xm2-4D-K3B"/>
                         </constraints>

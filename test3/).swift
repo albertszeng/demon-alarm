@@ -174,64 +174,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         composer.setText(tweet1 + tweet2 + tweet3 + tweet4)
         composer.setImage(UIImage(named: "fabric"))
-    
-        // reference the AlarmViewController so that information from that view controller can be accessed
-        let currentNavigationController = self.window?.rootViewController as! UINavigationController
         
-        if (object_getClassName(currentNavigationController.visibleViewController) == object_getClassName(viewController)) {
+        
+        // Called from a UIViewController
+        composer.show(from: viewController) { result in
+            NSLog("composer showing!!\n\n\n")
             
-            // Called from a UIViewController for AlarmTableViewController
-            composer.show(from: viewController) { result in
-                NSLog("composer showing!!\n\n\n")
-            
-                if (result == TWTRComposerResult.cancelled) {
-                    print("Tweet composition cancelled")
+            if (result == TWTRComposerResult.cancelled) {
+                print("Tweet composition cancelled")
                 
-                    // stop the sound
-                    if let player = self.player {
-                        player.stop()
-                    }
-                }
-                else {
-                    print("Sending tweet!")
-                
-                    // stop the sound
-                    if let player = self.player {
-                        player.stop()
-                    }
-                    self.rescheduleNotification(alarm: alarm)
+                // stop the sound
+                if let player = self.player {
+                    player.stop()
                 }
             }
-        }
-        else {
-            // reference the AlarmViewController so that information from that view controller can be accessed
-            let currentNavigationController = self.window?.rootViewController as! UINavigationController
-            let alarmViewController = currentNavigationController.visibleViewController as! AlarmViewController
-            
-            // Called from a UIViewController for AlarmViewController
-            composer.show(from: alarmViewController) { result in
-                NSLog("composer showing!!\n\n\n")
+            else {
+                print("Sending tweet!")
                 
-                if (result == TWTRComposerResult.cancelled) {
-                    print("Tweet composition cancelled")
-                    
-                    // stop the sound
-                    if let player = self.player {
-                        player.stop()
-                    }
+                // stop the sound
+                if let player = self.player {
+                    player.stop()
                 }
-                else {
-                    print("Sending tweet!")
-                    
-                    // stop the sound
-                    if let player = self.player {
-                        player.stop()
-                    }
-                    self.rescheduleNotification(alarm: alarm)
-                }
+                self.rescheduleNotification(alarm: alarm)
             }
         }
-
     }
     
     // function to reschedule a notification of snooze/post is pressed
